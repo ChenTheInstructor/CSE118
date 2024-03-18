@@ -6,15 +6,19 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter a whole number between 0 and 6");
-		double num = scanner.nextDouble();
-		String day = "";
-		switch (num) {
-		case 1.0, 2.0, 3.0, 4.0, 5.0:
-			day = "WEEKDAY";
+		System.out.println("Enter a name: ");
+		String name = scanner.nextLine();
+		char initial = name.charAt(0);
+		String gender = "";
+		
+		switch (initial) {
+		case 'J', 'A':
+//			gender = "Male";
+			System.out.println("The first initial is either J or A");
 			break;
-		case 0.0, 6.0:
-			day = "WEEKEND";
+		case 'L', 'S':
+//			gender = "Female";
+			System.out.println("The first initial is either L or S");
 			break;
 //		case  1:
 //			day = "SUNDAY";
@@ -38,9 +42,9 @@ public class Main {
 //			day = "SATURDAY";
 //			break;
 		default:
-			System.out.println("No such day in the week.");
+			System.out.println("I got something else.");
 		}
-		System.out.println(day);
+		System.out.println(gender);
 
 //		String day = "";
 //		if (num == 0) {
