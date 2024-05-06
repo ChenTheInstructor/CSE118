@@ -10,8 +10,8 @@ public class Main7 {
 //		System.out.println(linearSearch(a, target));
 		
 		String[] names = {"Bill", "Bill", "Alan", "Bill", 
-				"Bill", "Zack", "Liz", "Lisa", "Muhammud", "Jose"};
-		String targetName = "Bill";
+				"Bill", "Zack", "Liz", "Alan", "Muhammud", "Jose"};
+		String targetName = "Alan";
 		int[] matches = linearSearchAll(names, targetName);
 		for(int index : matches) {
 			System.out.print(index + " ");
@@ -28,6 +28,7 @@ public class Main7 {
 				matchCount++;
 			}
 		}
+//		return matches;
 		return Arrays.copyOf(matches, matchCount);
 		
 	}
