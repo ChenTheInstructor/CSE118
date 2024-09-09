@@ -15,7 +15,9 @@ public class DemoDay3 {
 //		System.out.println("Your half age is: " + halfAge);
 //		System.out.println("The remainder of " + age + " divided by 2 is " + remainder + ".");
 //		System.out.println("Next year you'll be " + nextYearAge);
-		char c = '*';
+		char c = 'P';
+//		System.out.println("Literal c: c");
+//		System.out.println("content at address c: " + c);
 		System.out.println("      " + c + "\n    " + c + "  " + c + "\n   " +c + c + c + c + c + c + "\n  " + c
 				+ "      " + c + "\n " + c + "        " + c);
 //		System.out.println("     A  A");
