@@ -3,6 +3,7 @@ package p1;
 import java.util.Scanner;
 
 public class Main {
+	static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
 //	p1	int score = getScore();
@@ -28,13 +29,119 @@ public class Main {
 //	p6	String color = getColor().toLowerCase();
 //		printComment(color);
 		
-		int a = getSide("a");
-		int b = getSide("b");
-		int c = getSide("c");
-		checkType(a, b, c);
+//	p7	int a = getSide("a");
+//		int b = getSide("b");
+//		int c = getSide("c");
+//		checkType(a, b, c);
 		
+//	p8	char ch = getCharacter();
+//		determineType(ch);
+	
+//	p9	String s1 = getString();
+//		String s2 = getString();
+//		EvaluateEquality(s1, s2);
+		
+//	p10	int monthNumber = getMonthNumber();
+//		showDaysForTheMonth(monthNumber);
+		
+//	p12	int n = getNumber();
+//		evaluateNumber(n);
+		
+		int n1 = getNumber();
+		int n2 = getNumber();
+		getAbsoluteDifference(n1, n2);
 	}
 	
+	
+	
+	private static void getAbsoluteDifference(int n1, int n2) {
+		System.out.println(Math.abs(n1 - n2));
+	}
+
+
+
+	private static void evaluateNumber(int n) {
+		if(n % 3 == 0 && n % 5 == 0) {
+			System.out.println("Multiple of 3 and 5.");
+		} else if(n % 3 == 0) {
+			System.out.println("Multiple of 3.");
+		} else if (n % 5 == 0) {
+			System.out.println("Multiple of 5.");
+		} else {
+			System.out.println("Neither");
+		}
+	}
+
+
+
+	private static void showDaysForTheMonth(int n) {
+		String str = switch(n) {
+		case 1, 3, 5, 7, 8, 10, 12 -> "31 days";
+		case 4, 6, 9, 11 -> "30 days";
+		case 2 -> "28 days";
+		default -> "no such number for a month";
+		};
+		System.out.println(str);
+		
+//		String days = (n == 1 || n == 3 || n == 5 || n == 7 || n == 8 || n == 10 || n == 12)? "31 days" 
+//				: (n == 2) ? "28 days" 
+//				: (n == 4 || n == 6 || n == 9 || n == 11)? "30 days" 
+//				: "No such day for a month";
+//		System.out.println(days);
+//		if(n == 1 || n == 3 || n == 5 || n == 7 || n == 8 || n == 10 || n == 12) {
+//			System.out.println("31 days.");
+//		} else if (n == 2) {
+//			System.out.println("28 days.");
+//		} else if(n == 4 || n == 6 || n == 9 || n == 11) {
+//			System.out.println("30 days.");
+//		} else {
+//			System.out.println("No such day for a month.");
+//		}
+	}
+
+	private static int getMonthNumber() {
+		System.out.print("Enter the number for the month: ");
+		return scanner.nextInt();
+	}
+
+	private static void EvaluateEquality(String s1, String s2) {
+		if(s1.equalsIgnoreCase(s2)) {
+			System.out.println("Equal.");
+		} else {
+			System.out.println("Not equal.");
+		}
+	}
+
+	private static String getString() {
+		System.out.print("Enter a string: ");
+		return scanner.nextLine();
+	}
+
+	private static void determineType(char ch) {
+		if(ch >= 97 && ch <= 122 || ch >= 65 && ch <= 90) {
+			System.out.println("Letter.");
+		} 
+		
+		else if (ch >= 48 && ch <= 57) {
+			System.out.println("Digit.");
+		} else {
+			System.out.println("Symbol.");
+		}
+//		if(Character.isDigit(ch)) {
+//			System.out.println("It's a digit.");
+//		} else if(Character.isAlphabetic(ch)) {
+//			System.out.println("It's a letter.");
+//		} else {
+//			System.out.println("It's a symbol.");
+//		}
+	}
+
+	private static char getCharacter() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a character: ");
+		return scanner.nextLine().charAt(0);
+	}
+
 	private static void checkType(int a, int b, int c) {
 		if(!isValidTriangle(a, b, c)) {
 			System.out.println("Invalid triangle");
