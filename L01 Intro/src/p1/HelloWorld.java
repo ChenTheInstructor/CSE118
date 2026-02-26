@@ -17,7 +17,8 @@ public class HelloWorld {
 		System.out.println("Enter your name: ");
 		String name = scanner.nextLine();
 		
-		System.out.printf("%20s%10d%10.2f\n",name, age, gpa);
+		System.out.printf("%-5S%10S%10S\n","Name", "Age", "GPA");
+		System.out.printf("%-5s%10d%10.2f\n",name, age, gpa);
 		
 
 //		System.out.println("Your name is: " + name);
