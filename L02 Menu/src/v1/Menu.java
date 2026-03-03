@@ -6,32 +6,32 @@ public class Menu {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int n = 1;
-		System.out.print("Enter the name of the restaurant: ");
-		String name = scanner.nextLine();
-		System.out.print("Enter the phone of the restaurant: ");
-		String phone = scanner.nextLine();
+		int itemCount = 1;
+		System.out.print("Enter the name of the restaurant: "); //prompt
+		String name = scanner.nextLine(); // capturing the name
+		System.out.print("Enter the phone of the restaurant: "); // prompt
+		String phone = scanner.nextLine(); // phone number
 
 		
 		
-		System.out.println("Enter dish " + (n) + ": ");
+		System.out.println("Enter dish " + (itemCount) + ": "); // prompt for dish 1
 		String dish1 = scanner.nextLine();
-		System.out.println("Enter dish " + (n++) + " price: ");
+		System.out.println("Enter dish " + (itemCount++) + " price: "); // prompt for price1
 		double price1 = scanner.nextDouble();
 		
 		scanner.nextLine();
 		
-		System.out.println("Enter dish " + (n) + ": ");
+		System.out.println("Enter dish " + (itemCount) + ": ");
 		String dish2 = scanner.nextLine();
-		System.out.println("Enter dish " + (n++) + " price: ");
+		System.out.println("Enter dish " + (itemCount++) + " price: ");
 		double price2 = scanner.nextDouble();
 		
 		scanner.nextLine();
 		
 		
-		System.out.println("Enter dish " + (n) + ": ");
+		System.out.println("Enter dish " + (itemCount) + ": ");
 		String dish3 = scanner.nextLine();
-		System.out.println("Enter dish " + (n++) + " price: ");
+		System.out.println("Enter dish " + (itemCount++) + " price: ");
 		double price3 = scanner.nextDouble();
 		
 		scanner.nextLine();
