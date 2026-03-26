@@ -36,14 +36,19 @@ public class Menu {
 		
 		scanner.nextLine();
 
+		
+		String dashLine = "------------------------------------------";
+		String dishFormat = "%5d%10s%10.2f\n";
+		
 		System.out.println("\t" + name);
-		System.out.println("\t" + phone);
-		System.out.println("--------------------------------------------");
+		System.out.println("\t " + phone);
+		System.out.println(dashLine);
 		int item = 1;
 		System.out.printf("%-5S%10S%10S\n", "Item", "Dish", "Price");
-		System.out.printf("%-5d%10s%10.2f\n", item++, dish1, price1);
-		System.out.printf("%-5d%10s%10.2f\n", item++, dish2, price2);
-		System.out.printf("%-5d%10s%10.2f\n", item++, dish3, price3);
+		System.out.printf(dishFormat, item++, dish1, price1);
+		System.out.printf(dishFormat, item++, dish2, price2);
+		System.out.printf(dishFormat, item++, dish3, price3);
+		System.out.println(dashLine);
 		
 
 //		System.out.println("Your name is: " + name);
