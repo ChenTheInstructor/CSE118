@@ -5,10 +5,14 @@ import java.util.Scanner;
 public class GraderApp {
 
 	public static void main(String[] args) {
-		for (int i = 0; i < 3; i++) {
+		grade(1);
+
+	}
+	
+	public static void grade(int n) {
+		for (int i = 0; i < n; i++) {
 			grade();
 		}
-
 	}
 
 	public static void grade() {
