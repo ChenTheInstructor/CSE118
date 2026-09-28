@@ -7,6 +7,7 @@ public class DemoPrintf {
 		int n = 0;
 		// n++ post increment: use n as is then add 1 to n
 		// ++n pre increment: add 1 to n first then use n
+		System.out.printf("\t%-15d%20.10f%20S%n", 100, 55.55555, "Price");
 		System.out.printf("\t%-15s%20s%20s%n", "Item Number", "Item Desc", "Price");
 		System.out.printf("\t%-15d%20S%20.2f%n", ++n, "Beef", 19.99);
 		System.out.printf("\t%-15d%20S%20.2f%n", ++n, "Eggs", 9.493456);
