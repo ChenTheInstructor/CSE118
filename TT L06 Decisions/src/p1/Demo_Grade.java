@@ -11,7 +11,7 @@ public class Demo_Grade {
 		
 		if(score < 60) {
 			System.out.println("You failed.");
-		} else {
+		} else { // nested if-else statement
 			System.out.println("You passed.");
 			if(score < 70) {
 				System.out.println("You cannot take the next CSE course.");
