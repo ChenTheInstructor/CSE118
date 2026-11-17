@@ -8,6 +8,7 @@ public class DemoArray2 {
 		String[] arr = new String[5];
 		arr[0] = "Adam";
 		arr[4] = "Renato";
+
 		arr[0] = "Jose";
 		arr[1] = "Bill";
 		arr[2] = "Cathy";
