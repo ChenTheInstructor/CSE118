@@ -14,7 +14,9 @@ public class DemoStudentClass {
 		
 		String[] names = new String[numStudents];
 		int[][] scores = new int[numStudents][numQuizzes];
+		
 		double[] averages = new double[numStudents];
+//		double[][] scoresAndAverage = new double[numStudents][numQuizzes + 1];
 		char[] grades = new char[numStudents];
 		
 		for(int i = 0; i < numStudents; i++) { // each student per iteration
